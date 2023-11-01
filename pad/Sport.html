@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+<style>
+      *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background: linear-gradient(#200016,#10001f);
+    height: 100vh;
+    font-family: system-ui;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+header .logo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul li{
+    margin-right: 30px;
+}
+header ul li a {
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+header ul li a:hover, .active{
+    background: #fff;
+    color:#200016;
+}
+center {
+    text-decoration: none;
+    color: #fff;
+
+}
+   div{ 
+        width: 400px;
+        height: 300px;
+        border: 1px solid silver;
+        background-image: url(../img2/six.jpg);
+        box-shadow: 1px 1px 12px black;
+        animation-name: photo;
+        animation-delay: 2s;
+        animation-duration:20s ;
+        animation-iteration-count:infinite ;
+    }
+    @keyframes photo{
+        10%{background-image: url(../img2/start.png);}
+        30%{background-image: url(../img2/tow.png);}
+        50%{background-image: url(../img2/three.png);}
+        70%{background-image: url(../img2/four.jpg);}
+        90%{background-image: url(../img2/five.jpg);}
+    
+
+    }
+</style>
+  </head>
+<body>
+    <center>
+        <h3> player shots</h3>
+        <div></div>
+        <br>
+        <p>More photos</p>
+   </center>
+<header>
+    <h2><a href="#" class="logo">News</a></h2>
+       <ul> 
+    <li> <a href="../index.html">Home</a></li>
+    <li><a href="#">Sport</a></li>
+    <li><a href="../pad/Importont.htm">Importontl</a></li>
+    <li><a href="../pad/Lest.html">Lest</a></li>
+    </ul> 
+</header>
+ 
+</body>
+</html>

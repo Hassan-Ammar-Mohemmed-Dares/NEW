@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+  <style> 
+  *{
+    margin: 0;
+    padding: 0;
+  }
+   body{
+    background: linear-gradient(#c92093,#97909e);
+    height: 100vh;
+    font-family: system-ui;
+    border-radius: 15px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+header .logo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul li{
+    margin-right: 30px;
+}
+header ul li a {
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+header ul li a:hover, .active{
+    background: #fff;
+    color:#200016;
+}
+    
+  </style>
+  <style> 
+    form{
+      position: absolute;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      width: 350px;
+      height: 420px;
+      background: rgba(0, 0, 0,.5);
+      border-radius: 15px;
+      box-sizing: border-box;  
+    
+    }
+    img[alt="user"]{
+      position: absolute;
+      top: -50px;
+      left: 118px;
+      border-radius: 100px;
+    }
+    h2{
+      color: rgb(194, 34, 34);
+      text-align: center;
+      margin-top: 90px;
+    }
+     input[type="text"],[type="passwerd"]{ 
+       position:absolute;
+       outline:none;
+       border:none;
+       width: 250px;
+       height:35px;
+       border-bottom:4px solid #a6ff00;
+       background: none;
+       padding: 5px;
+       color: #fff;
+}
+ [type="text"]{
+  top: 140px;
+  left: 50px;
+} 
+  [type="passwerd"]{
+  top: 210px;
+  left: 50px;
+}
+::placeholder{
+  color: #fff;
+}
+input[value="login"] {
+  position: absolute;
+  top: 305px;
+  left: 110px;
+  width: 130px;
+  height: 35px;
+  background: #07f;
+  border: none;
+  outline: 1px;
+  color: rgb(172, 25, 25);
+  border-radius: 15px;
+  font-size: 20px;
+}
+input [value="login"]:hover{ 
+  
+   background: #fff;
+   color: #07f;
+ }
+  p{
+  position: absolute;
+  top: 305px;
+  left: 110px;
+  color: #fff;
+  cursor: pointer;
+}
+p:hover{
+  color:#72c9ff;
+  top: 20px;
+ } 
+   </style> 
+        
+</head>
+<body>
+  <header>
+   
+
+    <h2><a href="#" class="logo">News</a></h2>
+    <ul> 
+<li> <a href="../index.html">Home</a></li>
+<li><a href="../pad/Sport.html">Sport</a></li>
+<li><a href="../pad/Importont.html">Importont</a></li>
+<li><a href="#">Lest</a></li>
+</ul> 
+
+  </header>
+ 
+  <form >
+
+
+    <img src="../img2/News.jpg" alt="user" width="35%">
+    <h2>login</h2>
+    <input type="text" placeholder="User Name"><br>
+    <input type="passwerd" placeholder="Enter Passwerd"><br>
+    <!-- <input type="checkbox">Remember me <br> -->
+    <input type="bottom" value="login"><br>
+     <!-- <p>forgot passwerd</p>  <br> -->
+  </form>
+  <!--  <div class="content">
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque amet quas veritatis vero dolorem corporis eius ipsa voluptate sit dolor magnam ducimus numquam alias, quibusdam aut fugiat, exercitationem, nemo quasi sunt in consequuntur. Culpa repudiandae vitae est sapiente exercitationem ab at fugiat temporibus ipsa soluta quas voluptatibus accusantium, commodi nostrum voluptatem id minus reiciendis recusandae veniam, porro eos esse fuga. Officia tempore voluptatem perferendis maxime, blanditiis earum consequatur magni sequi porro culpa nihil at atque incidunt corporis debitis illum rem aliquam distinctio nisi. Dolores ipsam animi modi quisquam repellat a iusto. Ipsum, velit non voluptatum vel voluptatem sapiente quas itaque.</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque amet quas veritatis vero dolorem corporis eius ipsa voluptate sit dolor magnam ducimus numquam alias, quibusdam aut fugiat, exercitationem, nemo quasi sunt in consequuntur. Culpa repudiandae vitae est sapiente exercitationem ab at fugiat temporibus ipsa soluta quas voluptatibus accusantium, commodi nostrum voluptatem id minus reiciendis recusandae veniam, porro eos esse fuga. Officia tempore voluptatem perferendis maxime, blanditiis earum consequatur magni sequi porro culpa nihil at atque incidunt corporis debitis illum rem aliquam distinctio nisi. Dolores ipsam animi modi quisquam repellat a iusto. Ipsum, velit non voluptatum vel voluptatem sapiente quas itaque.</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque amet quas veritatis vero dolorem corporis eius ipsa voluptate sit dolor magnam ducimus numquam alias, quibusdam aut fugiat, exercitationem, nemo quasi sunt in consequuntur. Culpa repudiandae vitae est sapiente exercitationem ab at fugiat temporibus ipsa soluta quas voluptatibus accusantium, commodi nostrum voluptatem id minus reiciendis recusandae veniam, porro eos esse fuga. Officia tempore voluptatem perferendis maxime, blanditiis earum consequatur magni sequi porro culpa nihil at atque incidunt corporis debitis illum rem aliquam distinctio nisi. Dolores ipsam animi modi quisquam repellat a iusto. Ipsum, velit non voluptatum vel voluptatem sapiente quas itaque.</p><br>
+</div> -->
+</body>
+</html> 
